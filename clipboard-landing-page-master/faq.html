@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>FAQ Page</title>
+    <style>
+        /* CSS styles */
+        @import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+        html{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: "Hind" , sans-serif;
+            background: #fff;
+            color: #4d5974;
+            display: flex;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            min-height: 100vh;
+        }
+        .container {
+            margin: 0 auto;
+            padding: 4rem;
+            width: 48rem;
+        }
+        h3 {
+            font-size: 1.75rem;
+            color: #373d51;
+            padding: 1.3rem;
+            margin: 0;
+        }
+        .accordion a {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: 100%;
+            padding: 1rem 3rem 1rem 1rem;
+            color: #7288a2;
+            font-size: 1.15rem;
+            font-weight: 400;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .accordion a::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            content: "\f067";
+            position: absolute;
+            float: right;
+            right: 1rem;
+            font-size: 1rem;
+            color: #7288a2;
+            padding: 5px;
+            width: 20px;
+            height: 20px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            border: 1px solid #7288a2;
+            text-align: center;
+        }
+        .accordion a:hover,
+        .accordion a:hover::after {
+            cursor: pointer;
+            color: #03b5d2;
+        }
+        .accordion a:hover::after {
+            border: 1px solid #03b5d2;
+        }
+        .accordion a.active {
+            color: #03b5d2;
+            border-bottom: 1px solid #03b5d2;
+        }
+        .accordion a.active::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            content: "\f068";
+            color: #03b5d2;
+            border: 1px solid #03b5d2;
+        }
+        .accordion .info {
+            opacity: 0;
+            padding: 0 1rem;
+            max-height: 0;
+            border-bottom: 1px solid #e5e5e5;
+            overflow: hidden;
+            clear: both;
+            -webkit-transition: all 0.2s ease 0.15s;
+            -o-transition: all 0.2s ease 0.15s;
+            transition: all 0.2s ease 0.15s;
+        }
+        .accordion .info p {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        .accordion .info.active {
+            opacity: 1;
+            padding: 1rem;
+            max-height: 100%;
+            -webkit-transition: all 0.35s ease 0.15s;
+            -o-transition: all 0.35s ease 0.15s;
+            transition: all 0.35s ease 0.15s;
+        }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+<body>
+    
+<div class="container">
+    <h3>FAQ  | ClipArchive</h3>
+    
+    <div class="accordion">
+
+       <!-- Menu 1 -->
+<div class="accordion-item">
+    <a>What is Clipboard?</a>
+    <div class="info">
+        <p>
+            Clipboard is a productivity tool that allows you to track and organize everything you copy. It securely stores your snippets in the cloud, enabling you to access them instantly on all your devices.
+        </p>
+    </div>
+</div>
+
+<!-- Menu 2 -->
+<div class="accordion-item">
+    <a>How does Clipboard sync across devices?</a>
+    <div class="info">
+        <p>
+            Clipboard utilizes end-to-end encryption to securely sync your snippets across all your devices. This ensures that your data remains private and accessible only to you.
+        </p>
+    </div>
+</div>
+
+<!-- Menu 3 -->
+<div class="accordion-item">
+    <a>Can I access my Clipboard history offline?</a>
+    <div class="info">
+        <p>
+            Yes, Clipboard provides offline access to your history. Any changes or additions made while offline will be synced across your devices once you regain an internet connection.
+        </p>
+    </div>
+</div>
+
+<!-- Menu 4 -->
+<div class="accordion-item">
+    <a>Is Clipboard compatible with different operating systems?</a>
+    <div class="info">
+        <p>
+            Absolutely! Clipboard is available for iOS, macOS, Windows, Android, and Linux, ensuring seamless integration across all major operating systems.
+        </p>
+    </div>
+</div>
+
+<!-- Menu 5 -->
+<div class="accordion-item">
+    <a>How can I organize my Clipboard snippets?</a>
+    <div class="info">
+        <p>
+            Clipboard offers various organizational features, including categorization by content, category, web address, application, and more. You can also create custom tags and folders to further organize your snippets.
+        </p>
+    </div>
+</div>
+<!-- Menu 6 -->
+<div class="accordion-item">
+    <a>Does Clipboard support collaboration features?</a>
+    <div class="info">
+        <p>
+            Yes, Clipboard offers collaboration features, allowing you to share snippets with colleagues or collaborators. You can also set permissions to control who can view or edit shared snippets.
+        </p>
+    </div>
+</div>
+
+<!-- Menu 7 -->
+<div class="accordion-item">
+    <a>How secure is Clipboard's encryption?</a>
+    <div class="info">
+        <p>
+            Clipboard employs state-of-the-art encryption protocols to safeguard your data. Our encryption standards ensure that your snippets remain secure and protected from unauthorized access.
+        </p>
+    </div>
+</div>
+
+<!-- Menu 8 -->
+<div class="accordion-item">
+    <a>Can I customize the appearance of Clipboard?</a>
+    <div class="info">
+        <p>
+            Yes, Clipboard provides customization options to tailor the appearance and behavior of the app to your preferences. You can adjust themes, font sizes, and layout settings to create a personalized experience.
+        </p>
+    </div>
+</div>
+
+<!-- Menu 9 -->
+<div class="accordion-item">
+    <a>Does Clipboard offer integration with other apps?</a>
+    <div class="info">
+        <p>
+            Absolutely! Clipboard seamlessly integrates with popular productivity apps such as Microsoft Office, Google Workspace, and Slack. This allows you to easily transfer snippets between Clipboard and your favorite tools.
+        </p>
+    </div>
+</div>
+
+<!-- Menu 10 -->
+<div class="accordion-item">
+    <a>Is there a limit to the number of snippets I can store?</a>
+    <div class="info">
+        <p>
+            Clipboard offers generous storage capacity for your snippets, with no strict limit on the number of items you can store. However, we recommend periodically organizing and archiving old snippets to maintain optimal performance.
+        </p>
+    </div>
+</div>
+</div>
+</div>
+
+<script>
+    const items = document.querySelectorAll(".accordion a");
+    items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+    function toggleAccordion() {
+        this.classList.toggle('active');
+        this.nextElementSibling.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
